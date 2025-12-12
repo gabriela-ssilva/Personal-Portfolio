@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriela Silva – Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+</head>
+  <body id="topo">
+  <header class="menu">
+  <a href="#topo" class="logo-topo">
+    <img src="img/Logo-Branca.svg" alt="Logo Gabriela Silva">
+  </a>
+  
+<button class="menu-toggle hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu" onclick="toggleMenu()">
+  <span class="hamb-line line1"></span>
+  <span class="hamb-line line2"></span>
+  <span class="hamb-line line3"></span>
+</button>
+
+
+    <nav class="menu-desktop">
+      <ul>
+        <li><a href="#sobre">SOBRE MIM</a></li>
+        <li><a href="#ux">UX & UI</a></li>
+        <li><a href="#grafico">DESIGN GRÁFICO</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+        <li><a href="Portfolio EN/index.html" class="botao-idioma">ENG</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <nav class="mobile-menu" id="mobileMenu">
+  <a href="#sobre">Sobre mim</a>
+  <a href="#ux">UX & UI</a>
+  <a href="#grafico">Design Gráfico</a>
+  <a href="#contato">Contato</a>
+  <li><a href="Portfolio EN/index.html" class="botao-idioma">ENG</a></li>
+</nav>
+
+ <section class="hero">
+  <div class="hero-esquerda">
+    <img src="img/Logo-Grande-branca.png" alt="Gabriela Silva Designer" class="logo-principal">
+  </div>
+
+  <div class="hero-direita">
+<div class="foto-com-degrade">
+  <img src="img/FotoPortf-Gabi.png" alt="Foto de Gabriela Silva" class="foto-perfil">
+  <img src="img/Imagem-Mobile.png" alt="Gabriela Silva Mobile" class="imagem-mobile">
+  <div class="degrade"></div>
+</div>
+
+  </div>
+</section>
+
+<section class="quem-sou-eu" id="sobre">
+  <h2 class="titulo" data-tooltip="Quem sou eu">Quem sou eu</h2>
+  <p class="texto-resumo">
+    Sou designer com formação em publicidade e propaganda e especialização em experiência do usuário e design de produtos digitais.
+  </p>
+  <p class="texto-completo">
+    Desde criança, eu vivia "no mundo da lua" entretida em minha própria criatividade então sempre foi claro que meu caminho seria algo ligado à criação.
+</p>
+<p class="texto-completo">
+  Ao fim do Ensino Médio entrei na mesma dúvida que milhares de jovens passam antes de escolher uma graduação, e acabei escolhendo cursar Publicidade e Propaganda pela UNA.
+</p>
+<p class="texto-completo">
+  Nos primeiros semestres percebi várias opções de atuação, mas sempre percebi que Design era o que realmente me dava vontade de atuar, e foi quando conheci o ramo de UX. Quando surgiu a oportunidade de me especializar, escolhi sem dúvidas: UX e Design Digital na PUC Minas (afinal eu queria ser também uma filha da PUC rs).
+</p>
+<p class="texto-completo">
+  Minha trajetória profissional passou por experiências diversas: estágios em design gráfico para os serviços de transporte de Contagem, criação de anúncios digitais e conteúdo para redes sociais em agência, atuação com marketing digital em ecommerce e, após um período dedicado aos estudos de UX/UI, segui como freelancer em Portugal em 2024.
+</p>
+<p class="texto-completo">
+  Então, se quiser que a minha história faça parte da sua equipe ou empresa, entre em contato comigo, vai ser um prazer criar algo especial juntos!
+</p>
+
+  <button class="botao-seta" onclick="expandirTexto()">
+    <img src="img/Seta-down.png" alt="Expandir texto">
+  </button>
+</section>
+
+<section id="ux" class="cases-ux-ui">
+  <h2 class="titulo-secao" data-tooltip="Cases de UX e Ui">Cases de UX e Ui</h2>
+
+  <div class="carrossel-container">
+  <!-- Seta esquerda -->
+  <button class="seta-carrossel seta-esquerda" onclick="voltarSlide()">
+    <img src="img/Seta-down.png" alt="Anterior">
+  </button>
+
+  <!-- Carrossel -->
+  <div class="carrossel" id="carrossel">
+    <img src="img/KoreaChicken.png" class="carrossel-item esquerda" onclick="selecionarSlide(0)">
+    <img src="img/Psi-Conecta.png" class="carrossel-item centro" onclick="selecionarSlide(1)">
+    <img src="img/Tangerine.png" class="carrossel-item direita" onclick="selecionarSlide(2)">
+  </div>
+
+  <!-- Seta direita -->
+  <button class="seta-carrossel seta-direita" onclick="avancarSlide()">
+    <img src="img/Seta-down.png" alt="Próximo">
+  </button>
+</div>
+
+  <div class="cards-ux-mobile" aria-label="Projetos UX/UI">
+    <article class="card-ux">
+      <img src="img/Psi-Conecta.png" alt="Psi Conecta">
+    </article>
+
+    <article class="card-ux">
+      <img src="img/KoreaChicken.png" alt="Korea Chicken">
+    </article>
+
+    <article class="card-ux">
+      <img src="img/Tangerine.png" alt="Tangerine">
+     </article>
+  </div>
+
+  <div class="descricao-case">
+  <h3 class="titulo-case" data-tooltip="Projeto">Projeto</h3>
+  <div class="texto-descricao">
+    <p>Sou especializada em design digital, UX e UI, e acredito que um bom design vai muito além do que só a aparência, ele transforma a forma como as pessoas se conectam com os produtos digitais, ainda mais a tecnologia tão entrelaçada a nossa rotina.</p>
+<p>Esses são alguns dos meus projetos, feitos ao concluir cursos ou ao transformar ideias que achei interessantes em realidade. 
+Quer ver mais detalhes e desenvolvimento de cada um? É só dar uma olhada no <a class="texto-link" href="https://www.behance.net/gabriela-ssilva" target="_blank"> meu behance!</a></p>
+  </div>
+  <div id="ux-thumbs" class="ux-thumbs"></div>
+
+<div id="lightbox" class="lightbox">
+  <span class="fechar">&times;</span>
+  <img id="imagem-ampliada" src="" alt="Imagem ampliada">
+</div>
+
+<div class="botao-wrapper">
+  <a href="#contato" class="botao-case">Entre em contato</a>
+</div>
+</div>
+</section>
+
+<section id="grafico" class="secao-design-grafico">
+  <h2 class="titulo-secao" data-tooltip="Design Gráfico">Design Gráfico</h2>
+
+  <div class="conteudo-design">
+    <div class="texto">
+      <h3 class="subtitulo-projeto" data-tooltip="Projeto">Projeto</h3>
+  <p> Alguns dos meus projetos de design gráfico preferidos, feitos desde meus estágios até hoje. Penso que cada arte conta uma história, mesmo as mais simples como posts para redes sociais, quando criadas com um verdadeiro propósito, com o olhar humano de um designer, podem transformar a forma como uma marca se comunica, fortalecendo seu branding e criando conexões reais com pessoas reais. <p/>
+<p> Quer ver mais detalhes e o processo por trás de cada uma? É só passar no <a class="texto-link" href="https://www.behance.net/gabriela-ssilva" target="_blank"> meu behance.</a></p>
+
+      <div class="botao-wrapper">
+  <a href="#contato" class="botao-case">Entre em contato</a>
+</div>
+
+    </div>
+
+    <div class="imagens">
+      <img src="img/Geekshop-2.png" alt="Imagem grande" class="imagem-grande">
+      <img src="img/Poster-BMTH.png" alt="Imagem quadrada" class="imagem-quadrada">
+      <img src="img/All-star-social.png" alt="Imagem pequena 1" class="imagem-horizontal">
+      <img src="img/Poster-Jealousy.png" alt="Imagem pequena 2" class="imagem-horizontal">
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox">
+  <span class="fechar">&times;</span>
+  <img id="imagem-ampliada" src="" alt="Imagem ampliada">
+</div>
+</section>
+
+<footer class="contato">
+  <section id="contato" class="secao-contato"></section>
+  <div class="contato-container">
+    <div class="email-contato">
+      <p>contato.gabrielasilva19@gmail.com</p>
+    </div>
+    <div class="redes-contato">
+      <p>Você também pode me encontrar no:</p>
+      <div class="icones-redes">
+        <a href="https://www.linkedin.com/in/gabriela-cs-silva/" target="_blank"><img src="img/Icone-linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://www.behance.net/gabriela-ssilva" target="_blank"><img src="img/Icone-behance.svg" alt="Behance"></a>
+        <a href="https://open.spotify.com/user/12163411458" target="_blank"><img src="img/Icone-spotify.svg" alt="Spotify"></a>
+      </div>
+    </div>
+  </div>
+<div class="credito-site">
+  <p>&copy; <span id="ano"></span> Desenvolvido por Gabriela Silva</p>
+</div>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+
+
+
+
+
